@@ -38,9 +38,9 @@ def next_block(last_block):
     
 # append 5 blocks to the blockchain
 def app_five(block_list):
-    b_list = Block
+    b_list = Block(self)
     if self.b_list == None:
-        self.blist = b_list
+        self.b_list = b_list
     else:
         curr=self.timestamp
         while (curr.previous_hash):
