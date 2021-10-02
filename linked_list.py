@@ -26,7 +26,7 @@ M4BlockChain.append(create_genesis_block())
 
 # write a function `next_block` to generate a block
 def next_block(last_block):
-    new_block = last_block(content, previous_hash)
+    new_block = Block(self)
     if self.lastblock == None:
         self.lastblock = new_block
     else:
@@ -38,7 +38,7 @@ def next_block(last_block):
     
 # append 5 blocks to the blockchain
 def app_five(block_list):
-    b_list = next_block(Block)
+    b_list = next_block(last_block)
     if self.blist == None:
         self.blist = b_list
     else:
