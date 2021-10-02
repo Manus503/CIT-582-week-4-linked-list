@@ -39,7 +39,7 @@ def next_block(last_block):
 # append 5 blocks to the blockchain
 def app_five(block_list):
     b_list = Block
-    if self.blist == None:
+    if self.b_list == None:
         self.blist = b_list
     else:
         curr=self.timestamp
