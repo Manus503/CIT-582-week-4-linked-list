@@ -31,12 +31,12 @@ def next_block(last_block):
         new_block.index = new_block
     else:
         curr=self.index
-        while curr.next!=None:
-            curr=curr.next
-        curr.next=new_block
+        while (curr.previous_hash):
+            curr=curr.previous_hash
+        curr.previous_hash=new_block
     pass
     
 # append 5 blocks to the blockchain
 def app_five(block_list):
-       # self.index = None
+       #if
     pass
