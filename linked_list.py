@@ -27,8 +27,8 @@ M4BlockChain.append(create_genesis_block())
 # write a function `next_block` to generate a block
 def next_block(last_block):
     new_block = last_block(index, timestamp, content, previous_hash)
-    if last_block.index == None:
-        last_block.index = new_block
+    if self.index == None:
+        self.index = new_block
     else:
         curr=self.index
         while (curr.previous_hash):
