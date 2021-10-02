@@ -27,8 +27,8 @@ M4BlockChain.append(create_genesis_block())
 # write a function `next_block` to generate a block
 def next_block(last_block):
     new_block = last_block(timestamp, content, previous_hash)
-    if self.timestamp == None:
-        self.timestamp = new_block
+    if self.lastblock == None:
+        self.lastblock = new_block
     else:
         curr=self.timestamp
         while (curr.previous_hash):
@@ -39,8 +39,8 @@ def next_block(last_block):
 # append 5 blocks to the blockchain
 def app_five(block_list):
     b_list = next_block(Block)
-    if self.timestamp == None:
-        self.timestamp = b_list
+    if self.blist == None:
+        self.blist = b_list
     else:
         curr=self.timestamp
         while (curr.previous_hash):
