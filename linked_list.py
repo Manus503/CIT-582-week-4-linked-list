@@ -38,7 +38,7 @@ def next_block(last_block):
     
 # append 5 blocks to the blockchain
 def app_five(block_list):
-    b_list = next_block()
+    b_list = next_block(last_block)
     if self.b_list == None:
         self.b_list = b_list
     else:
