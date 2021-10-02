@@ -30,7 +30,7 @@ def next_block(last_block):
     if self.lastblock == None:
         self.lastblock = new_block
     else:
-        curr=self.timestamp
+        curr=self.last_block
         while (curr.previous_hash):
             curr=curr.previous_hash
         curr.previous_hash=new_block
