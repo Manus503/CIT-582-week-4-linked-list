@@ -38,13 +38,15 @@ def next_block(last_block):
     
 # append 5 blocks to the blockchain
 def app_five(block_list):
-    b_list = next_block(last_block)
-    if self.b_list == None:
-        self.b_list = b_list
+    block_list.index = None
+    new_blist = Block(block_list)
+    
+    if self.index is None:
+        self.index = new_blist
     else:
-        curr=self.timestamp
+        curr = self.index
         while (curr.previous_hash):
-            curr=curr.previous_hash
-        curr.previous_hash=b_list
+            curr = curr.previous_hash
+        curr.previous_hash = new_blist
     
     pass
