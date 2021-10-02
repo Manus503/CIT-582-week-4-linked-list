@@ -26,8 +26,8 @@ M4BlockChain.append(create_genesis_block())
 
 # write a function `next_block` to generate a block
 def next_block(last_block):
-    last_block = block(last_block)
-    last_block.next = self.index
+    last_block = Block(last_block)
+    last_block.next_block = self.index
     
 
     pass
